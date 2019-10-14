@@ -65,7 +65,7 @@ def affichage_codage_huffman() :
     for i in range (len(phrase)) :
         coder += hashtable.get(phrase[i])   
     return(coder)
-    
+#on fait caractere par caractere , on parcours l'arbre pour definir les code 0 ou 1 qui permettent de coder / decoder / definir le dictionnaire 
 def decodage_huffman(coder,arbre_root,i,phrase_fini,phrase) :
     
     if len(phrase) == len(phrase_fini) : 
